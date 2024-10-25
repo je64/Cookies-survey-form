@@ -30,6 +30,12 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 30px;
+    color: #191516;
+    font-weight: bold;
+}
+
 form {
     display: flex;
     flex-direction: column;
