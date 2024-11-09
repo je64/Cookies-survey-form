@@ -98,7 +98,7 @@ button:hover{
 
 .container {
   width: 100%;
-  margin: 3.125rem auto 0 auto;
+  margin: 2.125rem auto 0 auto;
 }
 
 @media (min-width: 576px) {
@@ -150,7 +150,7 @@ form {
 
 @media (min-width: 480px) {
   form {
-    padding: 2.5rem;
+    padding: 2rem;
   }
 }
 
