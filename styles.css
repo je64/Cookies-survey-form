@@ -98,7 +98,7 @@ button:hover{
 
 .container {
   width: 100%;
-  margin: 2.125rem auto 0 auto;
+  margin: 3.125rem auto 0 auto;
 }
 
 @media (min-width: 576px) {
@@ -150,7 +150,7 @@ form {
 
 @media (min-width: 480px) {
   form {
-    padding: 2rem;
+    padding: 2.5rem;
   }
 }
 
@@ -201,12 +201,18 @@ form {
   cursor: pointer;
 }
 
+.next-button:disabled { 
+  background-color: #4CAF50; /* Ensure it stays green */ 
+  opacity: 0.6; /* Slightly transparent to indicate disabled state */ 
+  cursor: not-allowed; 
+}
+
 
 .credit{
   text-align: center;
   color: #18050b;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight:200;
+  font-weight: bolder;
 
   text-decoration: none;
   color: #420d09;
