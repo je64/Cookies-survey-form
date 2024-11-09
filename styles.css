@@ -201,12 +201,10 @@ form {
   cursor: pointer;
 }
 
-.next-button:disabled { 
-  background-color: #4CAF50; /* Ensure it stays green */ 
-  opacity: 0.6; /* Slightly transparent to indicate disabled state */ 
-  cursor: not-allowed; 
+.credit:hover{
+  color: #32065c;
+  cursor: pointer;
 }
-
 
 .credit{
   text-align: center;
