@@ -1,112 +1,252 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center"> Survey Form</h1>
+        <p id="description" class="description text-justify">
+          <span>By participating in this survey, you consent to JerKiDay Cookies using the information you provide to improve our products and services. Your responses will be kept confidential and used only for research purposes.</span> Your participation is voluntary, and you may withdraw from the survey at any time without any consequences.
+        </p>
+      </header>
+      <form id="survey-form">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+      <h2>Profile of respondents</h2>
 
-<body>
-    <main>
-        <header>
-            <h1 id="title">JerKiDay Cookies Survey</h1>
-            <h4 id="subtitle" style="text-align: left;">Consent Statement:</h4>
-            <p id="description">By participating in this survey, you consent to JerKiDay Cookies using the information you provide to improve our products and services. Your responses will be kept confidential and used only for research purposes. Your participation is voluntary, and you may withdraw from the survey at any time without any consequences.</p>
-        </header>
-        <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name<span class="clue">(optional)</span></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-            </div>
-            <div class="form-group">
-                <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
-            </div>
-            <div class="form-group">
-                <label for="age" id="number-label">Age</label>
-                <input type="number" name="age" id="number" min="1" max="99" placeholder="Enter Your Age">
-            </div>
+        <div class="form-group">
+          <label id="address-label" for="address">Address</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            class="form-control"
+            placeholder="Enter your Home address"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="school">Choose your School</label>
-                <select name="course" id="dropdown">
-                    <option selected disabled value>Select Your School</option>
-                    <option value="sabform">SABFORM</option>
-                    <option value="saf">SAF</option>
-                    <option value="sted">STED</option>
-                </select>
-            </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        
+        <div class="form-group">
+          <p>Gender</p>
+          <label>
+            <input
+              name="gender"
+              value="male"
+              type="radio"
+              class="input-radio"
+              checked
+            />Male</label
+          >
+          <label>
+            <input
+              name="gender"
+              value="female"
+              type="radio"
+              class="input-radio"
+            />Female</label
+          >
 
-            <div class="form-group">
-                <label for="rating">Would You Recommend Our Product To A Friend ?</label>
-                <div class="radio-group">
-                    <input type="radio" name="rating" id="never" value="never"><label for="never"> Never </label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" name="rating" id="maybe" value="maybe"><label for="maybe"> Maybe </label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" name="rating" id="likely" value="likely"><label for="likely"> Likely </label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" name="rating" id="definitely" value="definitely"><label for="definitely">
-                        Definitely
-                    </label>
-                </div>
-            </div>
+          <label
+            ><input
+              name="gender"
+              value="prefer-not-to-say"
+              type="radio"
+              class="input-radio"
+            />Prefer not to say</label
+          >
+        </div>
 
-            <div class="form-group">
-                <label for="liked">Select Things That You Liked About Our Product</label>
-                <div class="checkbox-group">
-                    <input type="checkbox" name="liked" id="ui" value="ui"><label for="ui">
-                        <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                            <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
-                        </svg>
-                        <span>UI</span>
-                    </label>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" name="liked" id="features" value="features"><label for="features">
-                        <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                            <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
-                        </svg>
-                        <span>Features</span>
-                    </label>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" name="liked" id="service" value="service"><label for="service">
-                        <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                            <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
-                        </svg>
-                        <span>Service</span>
-                    </label>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" name="liked" id="simpleness" value="simpleness"><label for="simpleness">
-                        <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                            <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
-                        </svg>
+        <div class="form-group">
+          <p>Civil Status</p>
+          <label>
+            <input
+              name="civil-status"
+              value="single"
+              type="radio"
+              class="input-radio"
+              checked
+            />Single</label
+            >
 
-                        <span>Simpleness</span>
-                    </label>
-                </div>
-            </div>
+          <label>
+            <input
+              name="civil-status"
+              value="cohabitation"
+              type="radio"
+              class="input-radio"
+            />Cohabitation</label
+            >
+  
+            <label
+              ><input
+                name="civil-status"
+                value="married"
+                type="radio"
+                class="input-radio"
+              />Married</label
+            >
 
-            <div class="form-group">
-                <label for="remark">Remarks</label>
-                <textarea name="remark" id="remark" placeholder="Tell Us How Can We Improve.."></textarea>
-            </div>
+            <label
+              ><input
+                name="civil-status"
+                value="widow"
+                type="radio"
+                class="input-radio"
+              />Widow/Widower</label>
 
-            <div class="form-group">
-                <button id="submit" type="submit">Submit</button>
-            </div>
-        </form>
-    </main>
-</body>
+            <label
+              ><input
+                name="civil-status"
+                value="separated"
+                type="radio"
+                class="input-radio"
+              />Separated</label>
+        </div>
 
+
+        <div class="form-group">
+          <p>Occupation/Position</p>
+          <label>
+            <input
+              name="occupation-position"
+              value="student"
+              type="radio"
+              class="input-radio"
+              checked
+            />Student</label
+            >
+          <label>
+            <input
+              name="occupation-position"
+              value="teacher"
+              type="radio"
+              class="input-radio"
+            />teacher</label
+            >
+  
+          <label>
+            <input
+              name="occupation-position"
+              value="manager"
+              type="radio"
+              class="input-radio"
+            />Manager</label
+            >
+          <label>
+            <input
+              name="occupation-position"
+              value="housewife"
+              type="radio"
+              class="input-radio"
+            />Housewife</label
+            >
+
+          <label>
+            <input
+              name="occupation-position"
+              value="occupation-position-others"
+              type="radio"
+              class="input-radio"
+            />Others <span>
+              <input 
+                type="text" 
+                class="form-control" 
+                placeholder="(Please Specify)" 
+                name="occupation-position-others"
+                id="occupation-position-others"
+              /></span></label
+            >
+        </div>
+
+          
+
+        <div class="form-group">
+          <p>Course</p>
+          <select id="dropdown" name="course" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="SAbForm">SAbForm</option>
+            <option value="SAF">SAF</option>
+            <option value="STED">STED</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+            <p>Year Level</p>
+            <select id="dropdown" name="year-level" class="form-control" required>
+              <option disabled selected value>Select current year level</option>
+              <option value="first-year">First Year</option>
+              <option value="second-year">Second Year</option>
+              <option value="thrid-year">Thrid Year</option>
+              <option value="fourth-year">Fourth Year</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>Monthly Income/Allowance</p>
+            <select id="dropdown" name="monthly-income-allowance" class="form-control" required>
+              <option disabled selected value>Select your monthly income/allowance</option>
+              <option value="bellow-5k">Bellow 5,000 pesos</option>
+              <option value="6-10k">6,000 - 10,000 pesos</option>
+              <option value="11-15k">11,000 - 15,000 pesos</option>
+              <option value="more-than-16k">More than 16,000 pesos</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label id="source-label" for="income-source">Source of Income/Allowance</label>
+            <input
+              type="text"
+              name="income-source"
+              id="income-source"
+              class="form-control"
+              placeholder="example: "
+              required
+            />
+          </div>
+
+          
+
+      
+
+        <div class="form-group">
+          <button type="next" id="next" class="next-button" onclick="goTo()">
+            Next
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="credit">Made by Kaizen Cabal</div>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
