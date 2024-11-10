@@ -5,6 +5,7 @@ function goTo() {
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('survey-form');
   const nextButton = document.getElementById('next');
+  nextButton.disabled = true;
 
   form.addEventListener('input', function () {
     let allValid = true;
@@ -15,5 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     nextButton.disabled = !allValid;
+    
   });
 });
