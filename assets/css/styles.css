@@ -1,6 +1,5 @@
 
 @import "{{ site.theme }}";
-
 :root {
   --color-white: #f3f3f3;
   --color-darkblue: #1b1b32;
