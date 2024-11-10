@@ -13,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     nextButton.disabled = !allValid;
+
+    function goTo() {
+  window.location.href = "index2.html"; // Replace with the URL of the next webpage
+}
     
   });
 });
 
 
-function goTo() {
-  window.location.href = "index2.html"; // Replace with the URL of the next webpage
-}
+
